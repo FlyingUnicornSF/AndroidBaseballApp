@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Baseball Score Counter</string>
+    <string name="team_a_name">Tigers</string>
+    <string name="team_b_name">Giants</string>
+</resources>

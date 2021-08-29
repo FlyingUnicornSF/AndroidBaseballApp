@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="@dimen/big_font"
+                    android:textStyle="bold"
+                    android:text="Team A" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="@dimen/big_font"
+                    android:textStyle="bold|italic"
+                    android:text="Score" />
+
+            </LinearLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/team_a_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="1"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="2"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="3"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="4"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="5"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="6"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="7"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="8"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="9"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="OT"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Strikes"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Inning"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/team_a_strike"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Strikes" />
+
+                    <TextView
+                        android:id="@+id/team_a_inning"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Inning" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Balls"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Outs"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/team_a_ball"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Balls" />
+
+                    <TextView
+                        android:id="@+id/team_a_out"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Outs" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:tag="team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_half_margin"
+                android:onClick="addScore"
+                android:text="+1 score" />
+
+            <Button
+                android:tag="team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addBall"
+                android:text="+1 Ball" />
+
+            <Button
+                android:tag="team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addStrike"
+                android:text="+1 Strike" />
+
+            <Button
+                android:tag="team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOut"
+                android:text="+1 Out" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="@dimen/big_font"
+                    android:textStyle="bold"
+                    android:text="Team B" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="@dimen/big_font"
+                    android:textStyle="bold|italic"
+                    android:text="Score" />
+
+            </LinearLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/team_b_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="1"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="2"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="3"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="4"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="5"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="6"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="7"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="8"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="9"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="OT"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Score" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Strikes"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Inning"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/team_b_strike"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Strikes" />
+
+                    <TextView
+                        android:id="@+id/team_b_inning"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Inning" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Balls"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Outs"
+                        android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/team_b_ball"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Balls" />
+
+                    <TextView
+                        android:id="@+id/team_b_out"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_cell_shape"
+                        android:gravity="center_horizontal"
+                        android:paddingHorizontal="@dimen/activity_half_margin"
+                        android:paddingVertical="@dimen/activity_quarter_margin"
+                        android:text="Outs" />
+
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:tag="team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_half_margin"
+                android:onClick="addScore"
+                android:text="+1 score" />
+
+            <Button
+                android:tag="team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addBall"
+                android:text="+1 Ball" />
+
+            <Button
+                android:tag="team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addStrike"
+                android:text="+1 Strike" />
+
+            <Button
+                android:tag="team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOut"
+                android:text="+1 Out" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin"
+        android:onClick="resetScore"
+        android:text="Reset" />
+</LinearLayout>
